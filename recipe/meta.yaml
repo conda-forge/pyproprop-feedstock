@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
     - numpy >=1.17
     - typing >=3.7
+    - sympy >=1.6
 
 test:
   imports:
@@ -34,7 +35,7 @@ about:
   license_file: LICENSE
   summary: Defensive DRY Python properties without the boilerplate
   description: |
-    pyproprop lets you write classes that contain lots of repetitive properties 
+    Pyproprop lets you write classes that contain lots of repetitive properties 
     which implement idioms such as type checking, bounds checking, type casting, 
     method applications etc. with ease and in a DRY manner.
   doc_url: https://pyproprop.readthedocs.io/
