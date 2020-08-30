@@ -1,5 +1,5 @@
 {% set name = "pyproprop" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 178f74092579e199a5e7b74da1e404098b63ab77428bbe0b9ff9a9df1633cf7d
+  sha256: 714e37b2ffe81f5134fd76c471ee59f1632405ac658d9c497dd304bdadc2197d
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,11 +22,12 @@ requirements:
     - python >=3.6
     - numpy >=1.17
     - typing >=3.7
+    - sympy >=1.6
 
 test:
   imports:
     - pyproprop
-  
+
 about:
   home: https://github.com/brocksam/pyproprop
   license: MIT
@@ -34,7 +35,7 @@ about:
   license_file: LICENSE
   summary: Defensive DRY Python properties without the boilerplate
   description: |
-    pyproprop lets you write classes that contain lots of repetitive properties 
+    Pyproprop lets you write classes that contain lots of repetitive properties 
     which implement idioms such as type checking, bounds checking, type casting, 
     method applications etc. with ease and in a DRY manner.
   doc_url: https://pyproprop.readthedocs.io/
