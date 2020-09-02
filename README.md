@@ -9,7 +9,7 @@ Feedstock license: BSD-3-Clause
 
 Summary: Defensive DRY Python properties without the boilerplate
 
-pyproprop lets you write classes that contain lots of repetitive properties
+Pyproprop lets you write classes that contain lots of repetitive properties
 which implement idioms such as type checking, bounds checking, type casting,
 method applications etc. with ease and in a DRY manner.
 
