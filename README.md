@@ -5,9 +5,13 @@ Home: https://github.com/brocksam/pyproprop
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyproprop-feedstock/blob/master/LICENSE.txt)
 
 Summary: Defensive DRY Python properties without the boilerplate
+
+Development: https://github.com/brocksam/pyproprop
+
+Documentation: https://pyproprop.readthedocs.io/
 
 Pyproprop lets you write classes that contain lots of repetitive properties
 which implement idioms such as type checking, bounds checking, type casting,
