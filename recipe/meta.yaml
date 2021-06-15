@@ -1,5 +1,5 @@
 {% set name = "pyproprop" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dfba1dd29905ee1b27b9843d9394dcf361788f26afbf0b1ec53c367c12f351a0
+  sha256: 61a312e443dd7d7374c34b354a914b6b61e2c973a260ee75bda8cbdb36efbcdc
 
 build:
   number: 0
