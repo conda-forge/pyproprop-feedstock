@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: cc1d66e70c7fea779f97119f25f942c5b59d865eebb03c5ae1c873403c75ebc9
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools-scm >=3
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.17
     - regex >=2020.4.4
     - titlecase >=2.2
@@ -28,6 +28,8 @@ requirements:
     - sympy >=1.6
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyproprop
 
